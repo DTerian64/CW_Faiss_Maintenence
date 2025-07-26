@@ -8,6 +8,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'faiss_trigger_function/**'
+      - '.github/workflows/main_cw-products-trigger-faiss-update.yml'
   workflow_dispatch:
 
 env:
@@ -17,6 +20,10 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      AZURE_FUNCTIONAPP_PACKAGE_PATH: 'faiss_trigger_function'
+
     permissions:
       contents: read #This is required for actions/checkout
 
@@ -35,12 +42,12 @@ jobs:
           source venv/bin/activate
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r faiss_trigger_function/requirements.txt
 
       # Optional: Add step to run tests here
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: zip -r release.zip ./faiss_trigger_function/*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
