@@ -1,0 +1,9 @@
+azure-functions>=1.11.0
+debugpy
+python-dotenv
+langchain
+langchain-community
+langchain-openai
+openai
+azure-storage-blob
+faiss-cpu

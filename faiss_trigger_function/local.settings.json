@@ -1,0 +1,19 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=ridesharewv64func;AccountKey=...",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "CosmosDB": "AccountEndpoint=https://ridesharewv64cosmos.documents.azure.com:443/;AccountKey=QOEaAqG9XwpWOQC1dkaihYORnAP89jmZVtX8eo5Dp929ofVA2trpqy4NUTYm85tdpD7RhU8f3SS5ACDbkPKtfw==;",
+    "AZURE_OPENAI_KEY": "GZKG9vDMRXllNrlyi0sGirWMb0y1PsGBlKXHSy9FT6pEXpetKdapJQQJ99BGAC4f1cMXJ3w3AAABACOGybQv",
+    "AZURE_OPENAI_ENDPOINT": "https://david64openai.openai.azure.com",
+    "AZURE_CHAT_DEPLOYMENT": "gpt-35-turbo",
+    "AZURE_EMBEDDING_DEPLOYMENT": "text-embedding-ada-002",
+    "AZURE_OPENAI_API_VERSION": "2023-05-15",
+    "COSMOS_ENDPOINT": "https://ridesharewv64cosmos.documents.azure.com:443/",
+    "COSMOS_PRIMARY_KEY": "QOEaAqG9XwpWOQC1dkaihYORnAP89jmZVtX8eo5Dp929ofVA2trpqy4NUTYm85tdpD7RhU8f3SS5ACDbkPKtfw==",
+    "COSMICWORKS_DATABASE_NAME": "cosmicworks",
+    "BLOB_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=ridesharewv64func;AccountKey=I7skWH1q90DKL/SthTP4NIlVJEvlEHGm3DNZ09Meuwea6pwxIAmJFLXLXN/5tq9zucfySli0utE9+AStMqtqVg==;EndpointSuffix=core.windows.net",
+    "BLOB_CONTAINER_NAME": "vector-indexes",
+    "AZURE_FAISS_BLOB_DIR": "faiss_cosmicworks"
+  }
+}
